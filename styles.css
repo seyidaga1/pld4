@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 1rem;
+}
+
+header {
+    text-align: center;
+    padding: 1rem;
+    background: #222;
+    color: #fff;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 0.5rem;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 0.5rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.intro-text h1 {
+    font-size: 1.8rem;
+}
+
+.intro-text p {
+    font-size: 1rem;
+}
+
+.intro-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.contact {
+    background: #f4f4f4;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.contact h2 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #222;
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+@media (min-width: 768px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+    }
+
+    nav ul {
+        margin-top: 0;
+    }
+
+    .intro {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .intro-text, .intro-image {
+        flex: 1;
+    }
+
+    .intro-text h1 {
+        font-size: 2.2rem;
+    }
+
+    .intro-text p {
+        font-size: 1.1rem;
+    }
+
+    footer {
+        padding: 2rem;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    body {
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    .intro-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .intro-text p {
+        font-size: 1.2rem;
+    }
+}
